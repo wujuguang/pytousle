@@ -1,6 +1,8 @@
 # !/usr/bin/env python
 # coding: utf-8
 
+from __future__ import print_function
+
 """
 Obtain the repeat data from a list object.
 """
@@ -71,11 +73,11 @@ if __name__ == '__main__':
 
     from timeit import repeat, default_timer
 
-    print repeat("get_repeat_loop_cmp(demo_lst)", "from __main__ import get_repeat_loop_cmp,demo_lst",
-                 default_timer, 10, 10000)
+    print(repeat("get_repeat_loop_cmp(demo_lst)", "from __main__ import get_repeat_loop_cmp,demo_lst",
+                 default_timer, 10, 10000))
 
-    print repeat("get_repeat_loop_count(demo_lst)", "from __main__ import get_repeat_loop_count,demo_lst",
-                 default_timer, 10, 10000)
+    print(repeat("get_repeat_loop_count(demo_lst)", "from __main__ import get_repeat_loop_count,demo_lst",
+                 default_timer, 10, 10000))
 
-    print repeat("get_repeat_loop_in(demo_lst)", "from __main__ import get_repeat_loop_in,demo_lst",
-                 default_timer, 10, 10000)
+    print(repeat("get_repeat_loop_in(demo_lst)", "from __main__ import get_repeat_loop_in,demo_lst",
+                 default_timer, 10, 10000))
