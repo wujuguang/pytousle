@@ -10,11 +10,33 @@ Obtain the round number from a float object.
 import math
 
 
+# -------------------------------------------
+# 取小于等于的整数.
+
 def int_function(float_number):
     """直接取整数 -- 取小于等于的整数.
     """
     return int(float_number)
 
+
+def floor_function(float_number):
+    """使用math库取整 -- 取小于等于的整数.
+    """
+
+    # floor返回float类型.
+    return int(math.floor(float_number))
+
+
+def trunc_function(float_number):
+    """使用math库取整 -- 截取整数.
+    """
+
+    # trunc返回int类型.
+    return math.trunc(float_number)
+
+
+# -------------------------------------------
+# 四舍五入后取整.
 
 def round_function(float_number):
     """四舍五入后取整.
@@ -22,21 +44,24 @@ def round_function(float_number):
     return int(round(float_number))
 
 
-def floor_function(float_number):
-    """使用math库取整 -- 取小于等于的整数.
+# -------------------------------------------
+# 小数点后有非零值都向上取整.
+
+def up_ceil_function(float_number):
+    """int_function的逆反, 小数点后有值都向上取整.
     """
-    return int(math.floor(float_number))
+    return int(math.ceil(float_number))
 
 
 def up_int_function(float_number):
     """int_function的逆反, 小数点后有值都向上取整.
     """
     int_number = int(float_number)
-    if float_number > int_number:
-        return int_number + 1
-    else:
-        return int_number
+    return int_number + 1 if float_number > int_number else int_number
 
+
+# -------------------------------------------
+# 按位数都向上取整.
 
 def up_int_digit_function(float_number, digit=0):
     """up_int_function扩展, 按位数都向上取整.
@@ -73,6 +98,7 @@ if __name__ == '__main__':
         # print(int_function(i))
         # print(round_function(i))
         # print(floor_function(i))
+        # print(up_ceil_function(i))
         # print(up_int_function(i))
         pass
 
