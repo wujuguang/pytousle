@@ -52,6 +52,6 @@ def get_days_from_date(str_date):
 
 
 if __name__ == "__main__":
-    print(get_date_sequence("2016-04-16"))
-    print(get_date_sequence("2015/03/16"))
-    print(get_date_sequence("2014.02.16"))
+    print(get_days_from_date("2016-04-16"))
+    print(get_days_from_date("2015/03/16"))
+    print(get_days_from_date("2014.02.16"))
