@@ -10,6 +10,7 @@
         issue/get_days_from_date.py: 计算某日期为当前年中的第几天.
         issue/merge_sorted_array.py: 合并两个已排序列表.
         issue/loop_single_linked_list.py: 单链表遍历.
+        issue/done_weight_forward.py: 出现次数越多越靠前.
 
     Search:
         search/binary_search.py: Sequence Search.
