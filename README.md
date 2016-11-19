@@ -5,6 +5,7 @@
     Explore:
         explore/filter_replace.py: Filter和Replace两种方式比较.
         explore/reduce_sum_loop.py: Reduce和Sum和Loop求和的几种方式比较.
+        explore/remove_repeat.py: 循环以及Set去重的两种方式.
 
     Issue:
         issue/fibonacci.py: 斐波那契数列.
