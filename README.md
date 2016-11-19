@@ -2,6 +2,9 @@
 顾名思义, 存放的是杂乱无章的小代码, 在兵荒马乱的日子.
 
 ### 索引:
+    Explore:
+        explore/filter_replace.py: Filter和Replace两种方式比较.
+
     Issue:        
         issue/fibonacci.py: 斐波那契数列.
         issue/get_prime_range.py: 从指定范围获取素数.
