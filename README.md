@@ -4,8 +4,9 @@
 ### 索引:
     Explore:
         explore/filter_replace.py: Filter和Replace两种方式比较.
+        explore/reduce_sum_loop.py: Reduce和Sum和Loop求和的几种方式比较.
 
-    Issue:        
+    Issue:
         issue/fibonacci.py: 斐波那契数列.
         issue/get_prime_range.py: 从指定范围获取素数.
         issue/get_whether_power.py: 求某数是否是乘方数.
