@@ -11,6 +11,17 @@ import sys
 sys.setrecursionlimit(10000)
 
 
+def factorial(n):
+    """阶乘.
+    """
+
+    total = 1
+    while n > 0:
+        total = n * total
+        n -= 1
+    return total
+
+
 def get_whether_power(number, base):
     if number == 1 or number == base:
         result = True
@@ -31,3 +42,5 @@ if __name__ == "__main__":
     print(get_whether_power(37, 3))
     print(get_whether_power(81, 3))
     print(get_whether_power(28, 3))
+
+    print(factorial(10))
