@@ -8,6 +8,7 @@ Merge Sorted Array.
 """
 
 import random
+import six
 
 
 def merge_sorted_array(list_one, list_two):
@@ -44,12 +45,7 @@ def merge_array(list_one, list_two):
 
 
 def merge_sorted_more(*args):
-    try:
-        from functools import reduce
-    except ImportError:
-        pass
-
-    return reduce(merge_sorted_array, args)
+    return six.moves.reduce(merge_sorted_array, args)
 
 
 if __name__ == '__main__':

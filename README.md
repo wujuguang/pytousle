@@ -10,7 +10,7 @@
     Issue:
         issue/fibonacci.py: 斐波那契数列.
         issue/get_prime_range.py: 从指定范围获取素数.
-        issue/get_whether_power.py: 求某数是否是乘方数.
+        issue/get_whether_pow.py: 求某数是否是乘方数.
         issue/get_repeat_data.py: 从list对象中取出重复数据的几种方式.
         issue/get_round_number.py: 从float对象中向上向下取出整几种方式.
         issue/get_days_from_date.py: 计算某日期为当前年中的第几天.

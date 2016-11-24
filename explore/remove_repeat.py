@@ -34,6 +34,19 @@ def remove_repeat_set(lst):
     return result
 
 
+def remove_repeat_dict_keys(lst):
+    """利用Dict的Key唯一性去重.
+
+        :param lst:
+        :return:
+    """
+
+    # print({}.fromkeys(lst))
+    result = list({}.fromkeys(lst).keys())
+    result.sort(key=lst.index)  # 保持原来的顺序
+    return result
+
+
 def measure():
     from timeit import repeat, default_timer
 
@@ -48,6 +61,7 @@ if __name__ == "__main__":
     data_test = [3, 2, 4, 5, 1, 3]
     print(remove_repeat_loop(data_test))
     print(remove_repeat_set(data_test))
+    print(remove_repeat_dict_keys(data_test))
 
     measure()
 

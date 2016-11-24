@@ -11,7 +11,9 @@ import random
 
 
 def bucket_sort(lst, max_number):
-    bucket_list = [None for _ in range(0, max_number + 1)]
+    bucket_list = [None] * max_number
+    print(bucket_list)
+    # bucket_list = [None for _ in range(0, max_number + 1)]
     for i in range(0, len(lst)):
         bucket_list[lst[i]] = lst[i]
     return bucket_list
@@ -19,7 +21,7 @@ def bucket_sort(lst, max_number):
 
 if __name__ == '__main__':
     def test_func():
-        int_list = [random.randint(0, 100) for _ in range(0, 10)]
+        int_list = [random.randint(0, 10) for _ in range(0, 10)]
         max_number = max(int_list)
 
         print(int_list)

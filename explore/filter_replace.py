@@ -8,12 +8,19 @@ Filter And Replace.
 """
 
 
-def done_filter(str_text, char):
-    return ''.join(filter(lambda x: x != char, str_text))
+def done_filter(str_text, old_char, new_char=''):
+    return new_char.join(filter(lambda x: x != old_char, str_text))
 
 
-def done_replace(str_text, char):
-    return str_text.replace(char, '')
+def done_replace(str_text, old_char, new_char=''):
+    return str_text.replace(old_char, new_char)
+
+
+def done_regular(str_text, old_char, new_char=''):
+    import re
+
+    r = re.compile(r'%s' % old_char)
+    return r.sub(new_char, str_text)
 
 
 def measure():
@@ -35,5 +42,6 @@ if __name__ == "__main__":
 
     print(done_filter(str_test, str_char))
     print(done_replace(str_test, str_char))
+    print(done_regular(str_test, str_char))
 
     measure()

@@ -7,12 +7,13 @@ from __future__ import print_function
 Get Whether Power.
 """
 import sys
+import six
 
 sys.setrecursionlimit(10000)
 
 
-def factorial(n):
-    """阶乘.
+def factorial_normal(n):
+    """求阶乘.
     """
 
     total = 1
@@ -22,7 +23,16 @@ def factorial(n):
     return total
 
 
+def factorial_function(n):
+    """求阶乘.
+    """
+
+    return six.moves.reduce(lambda x, y: x * y, range(1, n + 1))
+
+
 def get_whether_power(number, base):
+    """求某数是否为某数的乘幂.
+    """
     if number == 1 or number == base:
         result = True
     elif 1 < number < base:
@@ -43,4 +53,5 @@ if __name__ == "__main__":
     print(get_whether_power(81, 3))
     print(get_whether_power(28, 3))
 
-    print(factorial(10))
+    print(factorial_normal(10))
+    print(factorial_function(10))

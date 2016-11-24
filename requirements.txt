@@ -1,0 +1,2 @@
+six
+hg+https://bitbucket.org/mozman/bintrees
