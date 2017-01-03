@@ -15,7 +15,6 @@ class Node(object):
 
 
 if __name__ == '__main__':
-
     def init_node_set():
         node_list = []
         for i in range(0, 10):
@@ -25,9 +24,7 @@ if __name__ == '__main__':
             else:
                 node_list[i - 1].next_node = _node
                 node_list.append(_node)
-
         return node_list
-
 
     def init_node():
         node, node_cursor = None, None
@@ -40,7 +37,6 @@ if __name__ == '__main__':
                 node_cursor.next_node = _node
             node_cursor = _node
         return node
-
 
     one = init_node_set()[0]
     # one = init_node()

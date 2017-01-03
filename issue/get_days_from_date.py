@@ -29,7 +29,8 @@ def get_days_from_date(str_date):
 
     # 计算是否为闰年.
     leap_year = False
-    if (date_data.year % 4 == 0 and date_data.year % 100 != 0) or date_data.year % 400 == 0:
+    if (date_data.year % 4 == 0 and date_data.year % 100 != 0) \
+            or date_data.year % 400 == 0:
         leap_year = True
 
     # 初始当前月的天数.

@@ -100,16 +100,20 @@ def test(data_lst):
 def measure():
     from timeit import repeat, default_timer
 
-    print(repeat("get_repeat_loop_cmp(demo_lst)", "from __main__ import get_repeat_loop_cmp,demo_lst",
+    print(repeat("get_repeat_loop_cmp(demo_lst)",
+                 "from __main__ import get_repeat_loop_cmp,demo_lst",
                  default_timer, 10, 10000))
 
-    print(repeat("get_repeat_loop_time(demo_lst)", "from __main__ import get_repeat_loop_time,demo_lst",
+    print(repeat("get_repeat_loop_time(demo_lst)",
+                 "from __main__ import get_repeat_loop_time,demo_lst",
                  default_timer, 10, 10000))
 
-    print(repeat("get_repeat_loop_count(demo_lst)", "from __main__ import get_repeat_loop_count,demo_lst",
+    print(repeat("get_repeat_loop_count(demo_lst)",
+                 "from __main__ import get_repeat_loop_count,demo_lst",
                  default_timer, 10, 10000))
 
-    print(repeat("get_repeat_loop_in(demo_lst)", "from __main__ import get_repeat_loop_in,demo_lst",
+    print(repeat("get_repeat_loop_in(demo_lst)",
+                 "from __main__ import get_repeat_loop_in,demo_lst",
                  default_timer, 10, 10000))
 
 

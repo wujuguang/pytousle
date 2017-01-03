@@ -66,12 +66,14 @@ if __name__ == '__main__':
         print("Merged Length:", len(merged_data))
         print("Merged Data:", merged_data)
 
-
     def test_merge():
-        merged_data = merge_sorted_more(sorted([1, 7, 2]), sorted([3, 8, 5]), sorted([0, 6, 9]))
+        merged_data = merge_sorted_more(
+            sorted([1, 7, 2]),
+            sorted([3, 8, 5]),
+            sorted([0, 6, 9]))
+
         print("More Merged Length:", len(merged_data))
         print("More Merged Data:", merged_data)
-
 
     print("-" * 40)
     test_func()
