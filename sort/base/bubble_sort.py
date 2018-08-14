@@ -9,6 +9,7 @@ Bubble Sort.
 
 
 def bubble_sort(lists):
+    """从左边开始, 最小居左法."""
     print(lists)
     count = len(lists)
     for i in range(0, count):
