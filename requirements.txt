@@ -1,2 +1,4 @@
 six
-hg+https://bitbucket.org/mozman/bintrees
+sortedcontainers
+git+https://github.com/mozman/bintrees.git
+git+https://github.com/joowani/binarytree.git

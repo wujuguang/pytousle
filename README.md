@@ -1,6 +1,11 @@
 ### 概述:
 顾名思义, 存放的是杂乱无章的小代码, 在兵荒马乱的日子.
 
+
+### 安装:
+apt-get install mercurial
+apt-get install git
+
 ### 索引:
     Explore:
         explore/filter_replace.py: Filter和Replace两种方式比较.
