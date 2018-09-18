@@ -4,7 +4,7 @@
 from __future__ import print_function
 
 """
-Introspect.
+Introspect, 自省相关技巧.
 """
 
 

@@ -43,6 +43,23 @@ def get_whether_power(number, base):
     return result
 
 
+def get_whether_power2(number, base):
+    """求某数是否为某数的乘幂.
+    """
+
+    while True:
+        if number == 1 or number == base:
+            result = True
+            break
+        elif 1 < number < base:
+            result = False
+            break
+        else:
+            number = number / base
+
+    return result
+
+
 if __name__ == "__main__":
     print(get_whether_power(1, 3))
     print(get_whether_power(3, 3))

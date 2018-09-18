@@ -4,7 +4,7 @@
 from __future__ import print_function
 
 """
-Filter And Replace.
+Filter And Replace, 过滤和替换技巧.
 """
 
 

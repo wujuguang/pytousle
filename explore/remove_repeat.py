@@ -4,7 +4,7 @@
 from __future__ import print_function
 
 """
-Remove Repeat Value.
+Remove Repeat Value, 去重复值操作技巧.
 """
 
 

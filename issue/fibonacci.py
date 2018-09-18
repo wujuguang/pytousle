@@ -10,10 +10,13 @@ Fibonacci Array, 时间与空间优化最好.
 
 def fibonacci_more(n):
     """空间优化方案."""
+    if n < 2:
+        return n
+
     a, b = 1, 2
     for _ in range(1, n - 1):
         a, b = b, a + b
-    return n if n < 2 else b
+    return b
 
 
 def fibonacci_try(n):

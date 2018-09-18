@@ -6,7 +6,7 @@ from __future__ import print_function
 import six
 
 """
-Reduce And Sum And Loop.
+Reduce And Sum And Loop, 叠加运算技巧.
 """
 
 
